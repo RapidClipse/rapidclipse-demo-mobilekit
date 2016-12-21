@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template APPLE_IPHONE_6?>
+<?import com.xdev.ui.XdevButton?>
+<?import com.xdev.ui.XdevGridLayout?>
+<?import com.xdev.ui.XdevHorizontalLayout?>
+<?import com.xdev.ui.XdevLabel?>
+<?import com.xdev.ui.XdevPanel?>
+<?import com.xdev.ui.XdevVerticalLayout?>
+<?import com.xdev.ui.XdevView?>
+<XdevView xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="MainView">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <XdevGridLayout x:name="gridLayout">
+        <x:constraints zpos="0" width="100%" height="100%" />
+        <XdevHorizontalLayout x:name="horizontalLayout" margin="">
+            <x:constraints gridx="1" gridy="1" weighty="0.0" weightx="0.1" width="100%" />
+            <XdevLabel styleName="huge colored" x:name="label" value="MobileKit Demo">
+                <x:constraints gridHeight="1" gridx="1" gridy="1" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+            </XdevLabel>
+            <XdevButton icon="FontAwesome.HOME" caption="Exit" styleName="borderless" x:name="cmdExit">
+                <x:constraints weightx="0.0" />
+                <x:event>click.buttonClick</x:event>
+            </XdevButton>
+        </XdevHorizontalLayout>
+        <XdevPanel styleName="borderless" x:name="panel">
+            <x:constraints gridx="1" gridy="2" weighty="0.1" weightx="0.1" width="100%" height="100%" />
+            <XdevVerticalLayout x:name="verticalLayout" margin="">
+                <x:constraints zpos="0" width="100%" height="-1px" />
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="Accelerometer" styleName="huge" x:name="cmdAccelerometer">
+                    <x:constraints gridHeight="1" gridx="1" gridy="2" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="App" styleName="huge" x:name="cmdApp">
+                    <x:constraints gridHeight="1" gridx="1" gridy="3" top="51px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="Barcodescanner" styleName="huge" x:name="cmdBarcodescanner">
+                    <x:constraints gridHeight="1" gridx="1" gridy="4" top="103px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="Camera" styleName="huge" x:name="cmdCamera">
+                    <x:constraints gridHeight="1" gridx="1" gridy="5" top="155px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="Compass" styleName="huge" x:name="cmdCompass">
+                    <x:constraints gridHeight="1" gridx="1" gridy="6" top="207px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="Contacts" styleName="huge" x:name="cmdContacts">
+                    <x:constraints gridHeight="1" gridx="1" gridy="5" top="207px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="Device Info" styleName="huge" x:name="cmdDeviceInfo">
+                    <x:constraints gridHeight="1" gridx="1" gridy="5" top="259px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="Geolocation" styleName="huge" x:name="cmdGeolocation">
+                    <x:constraints gridHeight="1" gridx="1" gridy="5" top="311px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="NFC" styleName="huge" x:name="cmdNFC">
+                    <x:constraints gridHeight="1" gridx="1" gridy="5" top="363px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="SMS" styleName="huge" x:name="cmdSMS">
+                    <x:constraints gridHeight="1" gridx="1" gridy="5" top="415px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+                <XdevButton icon="FontAwesome.ANGLE_DOUBLE_RIGHT" caption="Vibration" styleName="huge" x:name="cmdVibration">
+                    <x:constraints gridHeight="1" gridx="1" gridy="5" top="467px" left="-1px" weighty="0.0" weightx="0.1" width="100%" gridWidth="1" />
+                    <x:event>click.buttonClick</x:event>
+                </XdevButton>
+            </XdevVerticalLayout>
+        </XdevPanel>
+    </XdevGridLayout>
+</XdevView>
+

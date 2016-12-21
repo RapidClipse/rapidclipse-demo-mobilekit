@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template APPLE_IPHONE_6?>
+<?import com.xdev.rcdemo.mobilekit.ui.NavBar?>
+<?import com.xdev.ui.XdevButton?>
+<?import com.xdev.ui.XdevGridLayout?>
+<?import com.xdev.ui.XdevImage?>
+<?import com.xdev.ui.XdevView?>
+<XdevView xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="CameraView">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <XdevGridLayout x:name="gridLayout">
+        <x:constraints zpos="0" width="100%" height="100%" />
+        <NavBar title="Camera" x:name="navBar">
+            <x:constraints gridx="1" gridy="1" weighty="0.0" weightx="0.1" width="100%" />
+        </NavBar>
+        <XdevButton caption="Take Picture" x:name="cmdOpenCamera">
+            <x:constraints gridx="1" gridy="2" weighty="0.0" weightx="0.1" width="100%" />
+            <x:event>click.buttonClick</x:event>
+        </XdevButton>
+        <XdevImage x:name="image">
+            <x:constraints gridx="1" gridy="3" weighty="0.1" weightx="0.1" width="100%" height="100%" />
+        </XdevImage>
+    </XdevGridLayout>
+</XdevView>
+

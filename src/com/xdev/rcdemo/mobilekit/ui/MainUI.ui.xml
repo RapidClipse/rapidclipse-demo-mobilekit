@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template APPLE_IPHONE_6?>
+<?import com.xdev.rcdemo.mobilekit.ui.AccelerometerView?>
+<?import com.xdev.rcdemo.mobilekit.ui.AppView?>
+<?import com.xdev.rcdemo.mobilekit.ui.BarcodescannerView?>
+<?import com.xdev.rcdemo.mobilekit.ui.CameraView?>
+<?import com.xdev.rcdemo.mobilekit.ui.CompassView?>
+<?import com.xdev.rcdemo.mobilekit.ui.ContactsView?>
+<?import com.xdev.rcdemo.mobilekit.ui.DeviceInfoView?>
+<?import com.xdev.rcdemo.mobilekit.ui.GeolocationView?>
+<?import com.xdev.rcdemo.mobilekit.ui.MainView?>
+<?import com.xdev.rcdemo.mobilekit.ui.NfcView?>
+<?import com.xdev.rcdemo.mobilekit.ui.SmsView?>
+<?import com.xdev.rcdemo.mobilekit.ui.VibrationView?>
+<?import com.xdev.ui.XdevUI?>
+<?import com.xdev.ui.navigation.XdevNavigator?>
+<XdevUI xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="MainUI">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <XdevNavigator x:target="MainUI" x:name="navigator" x:singleComponentContainer="MainUI">
+        <x:views>
+            <entry path="" class="MainView" />
+            <entry path="accelerometer" class="AccelerometerView" />
+            <entry path="app" class="AppView" />
+            <entry path="barcodescanner" class="BarcodescannerView" />
+            <entry path="camera" class="CameraView" />
+            <entry path="compass" class="CompassView" />
+            <entry path="contacts" class="ContactsView" />
+            <entry path="deviceinfo" class="DeviceInfoView" />
+            <entry path="geolocation" class="GeolocationView" />
+            <entry path="nfc" class="NfcView" />
+            <entry path="sms" class="SmsView" />
+            <entry path="vibration" class="VibrationView" />
+        </x:views>
+    </XdevNavigator>
+</XdevUI>
+

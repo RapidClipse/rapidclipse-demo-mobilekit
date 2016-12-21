@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template APPLE_IPHONE_6?>
+<?import com.xdev.ui.XdevButton?>
+<?import com.xdev.ui.XdevHorizontalLayout?>
+<?import com.xdev.ui.XdevLabel?>
+<XdevHorizontalLayout xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="NavBar" margin="">
+    <x:constraints zpos="0" width="100%" height="-1px" />
+    <XdevLabel styleName="huge colored" x:name="lblTitle" value="Title">
+        <x:constraints weightx="0.1" width="100%" />
+    </XdevLabel>
+    <XdevButton icon="FontAwesome.ANGLE_DOUBLE_LEFT" caption="Back" styleName="borderless" x:name="cmdHome">
+        <x:constraints weightx="0.0" />
+        <x:event>click.buttonClick</x:event>
+    </XdevButton>
+</XdevHorizontalLayout>
+

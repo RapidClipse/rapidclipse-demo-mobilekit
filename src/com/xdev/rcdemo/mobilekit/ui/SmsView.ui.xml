@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template APPLE_IPHONE_6?>
+<?import com.xdev.rcdemo.mobilekit.ui.NavBar?>
+<?import com.xdev.ui.XdevButton?>
+<?import com.xdev.ui.XdevGridLayout?>
+<?import com.xdev.ui.XdevLabel?>
+<?import com.xdev.ui.XdevNativeSelect?>
+<?import com.xdev.ui.XdevTextArea?>
+<?import com.xdev.ui.XdevView?>
+<XdevView xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="SmsView">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <XdevGridLayout x:name="gridLayout">
+        <x:constraints zpos="0" width="100%" height="100%" />
+        <NavBar title="SMS" x:name="navBar">
+            <x:constraints gridx="1" gridy="1" weighty="0.0" weightx="0.0" width="100%" gridWidth="2" />
+        </NavBar>
+        <XdevLabel styleName="large" x:name="label" value="Contact:">
+            <x:constraints gridx="1" gridy="2" weighty="0.0" weightx="0.0" alignment="MIDDLE_LEFT" />
+        </XdevLabel>
+        <XdevButton icon="FontAwesome.USER" caption="Pick Contact" x:name="cmdPickContact">
+            <x:constraints gridx="2" gridy="2" weighty="0.0" weightx="0.1" width="100%" />
+            <x:event>click.buttonClick</x:event>
+        </XdevButton>
+        <XdevLabel styleName="large" x:name="label2" value="Number:">
+            <x:constraints gridx="1" gridy="3" weighty="0.0" weightx="0.0" alignment="MIDDLE_LEFT" />
+        </XdevLabel>
+        <XdevNativeSelect x:name="cbPhoneNumber" immediate="true">
+            <x:constraints gridx="2" gridy="3" weighty="0.0" weightx="0.1" width="100%" />
+        </XdevNativeSelect>
+        <XdevLabel styleName="large" x:name="label3" value="Message:">
+            <x:constraints gridx="1" gridy="4" top="32px" left="-1px" weighty="0.1" weightx="0.0" />
+        </XdevLabel>
+        <XdevTextArea columns="5" x:name="textArea" rows="2">
+            <x:constraints gridx="2" gridy="4" weighty="0.1" weightx="0.1" width="100%" height="100%" />
+        </XdevTextArea>
+        <XdevButton caption="Send SMS" enabled="false" x:name="cmdSend">
+            <x:constraints gridx="2" gridy="5" weighty="0.0" weightx="0.1" alignment="MIDDLE_RIGHT" />
+            <x:event>click.buttonClick</x:event>
+        </XdevButton>
+    </XdevGridLayout>
+</XdevView>
+

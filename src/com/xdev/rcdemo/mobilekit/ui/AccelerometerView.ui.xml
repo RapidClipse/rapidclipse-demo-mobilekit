@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template APPLE_IPHONE_6?>
+<?import com.xdev.rcdemo.mobilekit.ui.NavBar?>
+<?import com.xdev.ui.XdevGridLayout?>
+<?import com.xdev.ui.XdevLabel?>
+<?import com.xdev.ui.XdevView?>
+<XdevView xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="AccelerometerView">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <x:event>attach.attach</x:event>
+    <x:event>detach.detach</x:event>
+    <XdevGridLayout x:name="gridLayout">
+        <x:constraints zpos="0" width="100%" height="100%" />
+        <NavBar title="Accelerometer" x:name="navBar">
+            <x:constraints gridx="1" gridy="1" weighty="0.0" weightx="0.1" width="100%" />
+        </NavBar>
+        <XdevLabel x:name="label" value="Move your phone to update the acceleration values.">
+            <x:constraints gridx="1" gridy="2" weighty="0.0" weightx="0.1" width="100%" />
+        </XdevLabel>
+        <XdevLabel caption="X:" x:name="lblX" value="xValue">
+            <x:constraints gridx="1" gridy="3" weighty="0.0" weightx="0.1" />
+        </XdevLabel>
+        <XdevLabel caption="Y:" x:name="lblY" value="yValue">
+            <x:constraints gridx="1" gridy="4" top="32px" left="-1px" weighty="0.0" weightx="0.0" />
+        </XdevLabel>
+        <XdevLabel caption="Z:" x:name="lblZ" value="zValue">
+            <x:constraints gridx="1" gridy="5" top="65px" left="-1px" weighty="0.0" weightx="0.0" />
+        </XdevLabel>
+    </XdevGridLayout>
+</XdevView>
+

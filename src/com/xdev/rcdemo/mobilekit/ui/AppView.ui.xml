@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template APPLE_IPHONE_6?>
+<?import com.xdev.rcdemo.mobilekit.ui.NavBar?>
+<?import com.xdev.ui.XdevCheckBox?>
+<?import com.xdev.ui.XdevGridLayout?>
+<?import com.xdev.ui.XdevView?>
+<XdevView xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="AppView">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <XdevGridLayout x:name="gridLayout">
+        <x:constraints zpos="0" width="100%" height="100%" />
+        <NavBar title="App" x:name="navBar">
+            <x:constraints gridx="1" gridy="1" weighty="0.0" weightx="0.1" width="100%" />
+        </NavBar>
+        <XdevCheckBox caption="Override Volume Buttons" styleName="large" x:name="chkVolumeButtons" immediate="true">
+            <x:constraints gridx="1" gridy="2" weighty="0.0" weightx="0.1" width="100%" />
+            <x:event>valueChange.valueChange</x:event>
+        </XdevCheckBox>
+        <XdevCheckBox caption="Override Back Button" styleName="large" x:name="chkBackButton" immediate="true">
+            <x:constraints gridx="1" gridy="3" weighty="0.0" weightx="0.1" width="100%" />
+            <x:event>valueChange.valueChange</x:event>
+        </XdevCheckBox>
+    </XdevGridLayout>
+</XdevView>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+
+<?xdevuiml version="1.0"?>
+<?template APPLE_IPHONE_6?>
+<?import com.xdev.rcdemo.mobilekit.ui.NavBar?>
+<?import com.xdev.ui.XdevButton?>
+<?import com.xdev.ui.XdevGridLayout?>
+<?import com.xdev.ui.XdevView?>
+<?import org.vaadin.addon.leaflet.LMap?>
+<XdevView xmlns:x="http://xml.xdev-software.com/xdevuiml" x:name="GeolocationView">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <XdevGridLayout x:name="gridLayout">
+        <x:constraints zpos="0" width="100%" height="100%" />
+        <NavBar title="Geolocation" x:name="navBar">
+            <x:constraints gridx="1" gridy="1" weighty="0.0" weightx="0.1" width="100%" />
+        </NavBar>
+        <XdevButton caption="Show current location" x:name="cmdLocation">
+            <x:constraints gridx="1" gridy="2" weighty="0.0" weightx="0.1" width="100%" />
+            <x:event>click.buttonClick</x:event>
+        </XdevButton>
+        <LMap x:name="map">
+            <x:constraints gridx="1" gridy="3" weighty="0.1" weightx="0.1" width="100%" height="100%" />
+        </LMap>
+    </XdevGridLayout>
+</XdevView>
+

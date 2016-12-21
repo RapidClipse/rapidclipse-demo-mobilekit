@@ -1,0 +1,318 @@
+
+package com.xdev.rcdemo.mobilekit.ui;
+
+import com.vaadin.navigator.ViewChangeListener;
+import com.vaadin.server.FontAwesome;
+import com.vaadin.shared.ui.MarginInfo;
+import com.vaadin.ui.Alignment;
+import com.vaadin.ui.Button;
+import com.xdev.mobile.service.app.AppService;
+import com.xdev.ui.XdevButton;
+import com.xdev.ui.XdevGridLayout;
+import com.xdev.ui.XdevHorizontalLayout;
+import com.xdev.ui.XdevLabel;
+import com.xdev.ui.XdevPanel;
+import com.xdev.ui.XdevVerticalLayout;
+import com.xdev.ui.XdevView;
+import com.xdev.ui.navigation.Navigation;
+
+public class MainView extends XdevView {
+
+	/**
+	 *
+	 */
+	public MainView() {
+		super();
+		this.initUI();
+	}
+
+	@Override
+	public void enter(final ViewChangeListener.ViewChangeEvent event) {
+		super.enter(event);
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton} {@link #cmdExit}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdExit_buttonClick(final Button.ClickEvent event) {
+		AppService.getInstance().closeApp();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton}
+	 * {@link #cmdBarcodescanner}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdBarcodescanner_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("barcodescanner").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton} {@link #cmdApp}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdApp_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("app").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton}
+	 * {@link #cmdAccelerometer}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdAccelerometer_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("accelerometer").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton} {@link #cmdCompass}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdCompass_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("compass").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton} {@link #cmdCamera}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdCamera_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("camera").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton}
+	 * {@link #cmdContacts}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdContacts_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("contacts").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton}
+	 * {@link #cmdDeviceInfo}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdDeviceInfo_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("deviceinfo").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton}
+	 * {@link #cmdGeolocation}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdGeolocation_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("geolocation").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton} {@link #cmdNFC}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdNFC_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("nfc").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton} {@link #cmdSMS}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdSMS_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("sms").navigate();
+	}
+
+	/**
+	 * Event handler delegate method for the {@link XdevButton}
+	 * {@link #cmdVibration}.
+	 *
+	 * @see Button.ClickListener#buttonClick(Button.ClickEvent)
+	 * @eventHandlerDelegate Do NOT delete, used by UI designer!
+	 */
+	private void cmdVibration_buttonClick(final Button.ClickEvent event) {
+		Navigation.to("vibration").navigate();
+	}
+
+	/*
+	 * WARNING: Do NOT edit!<br>The content of this method is always regenerated by
+	 * the UI designer.
+	 */
+	// <generated-code name="initUI">
+	private void initUI() {
+		this.gridLayout = new XdevGridLayout();
+		this.horizontalLayout = new XdevHorizontalLayout();
+		this.label = new XdevLabel();
+		this.cmdExit = new XdevButton();
+		this.panel = new XdevPanel();
+		this.verticalLayout = new XdevVerticalLayout();
+		this.cmdAccelerometer = new XdevButton();
+		this.cmdApp = new XdevButton();
+		this.cmdBarcodescanner = new XdevButton();
+		this.cmdCamera = new XdevButton();
+		this.cmdCompass = new XdevButton();
+		this.cmdContacts = new XdevButton();
+		this.cmdDeviceInfo = new XdevButton();
+		this.cmdGeolocation = new XdevButton();
+		this.cmdNFC = new XdevButton();
+		this.cmdSMS = new XdevButton();
+		this.cmdVibration = new XdevButton();
+
+		this.horizontalLayout.setMargin(new MarginInfo(false));
+		this.label.setStyleName("huge colored");
+		this.label.setValue("MobileKit Demo");
+		this.cmdExit.setIcon(FontAwesome.HOME);
+		this.cmdExit.setCaption("Exit");
+		this.cmdExit.setStyleName("borderless");
+		this.panel.setStyleName("borderless");
+		this.verticalLayout.setMargin(new MarginInfo(false));
+		this.cmdAccelerometer.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdAccelerometer.setCaption("Accelerometer");
+		this.cmdAccelerometer.setStyleName("huge");
+		this.cmdApp.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdApp.setCaption("App");
+		this.cmdApp.setStyleName("huge");
+		this.cmdBarcodescanner.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdBarcodescanner.setCaption("Barcodescanner");
+		this.cmdBarcodescanner.setStyleName("huge");
+		this.cmdCamera.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdCamera.setCaption("Camera");
+		this.cmdCamera.setStyleName("huge");
+		this.cmdCompass.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdCompass.setCaption("Compass");
+		this.cmdCompass.setStyleName("huge");
+		this.cmdContacts.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdContacts.setCaption("Contacts");
+		this.cmdContacts.setStyleName("huge");
+		this.cmdDeviceInfo.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdDeviceInfo.setCaption("Device Info");
+		this.cmdDeviceInfo.setStyleName("huge");
+		this.cmdGeolocation.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdGeolocation.setCaption("Geolocation");
+		this.cmdGeolocation.setStyleName("huge");
+		this.cmdNFC.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdNFC.setCaption("NFC");
+		this.cmdNFC.setStyleName("huge");
+		this.cmdSMS.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdSMS.setCaption("SMS");
+		this.cmdSMS.setStyleName("huge");
+		this.cmdVibration.setIcon(FontAwesome.ANGLE_DOUBLE_RIGHT);
+		this.cmdVibration.setCaption("Vibration");
+		this.cmdVibration.setStyleName("huge");
+
+		this.label.setWidth(100, Unit.PERCENTAGE);
+		this.label.setHeight(-1, Unit.PIXELS);
+		this.horizontalLayout.addComponent(this.label);
+		this.horizontalLayout.setComponentAlignment(this.label, Alignment.MIDDLE_CENTER);
+		this.horizontalLayout.setExpandRatio(this.label, 10.0F);
+		this.cmdExit.setSizeUndefined();
+		this.horizontalLayout.addComponent(this.cmdExit);
+		this.horizontalLayout.setComponentAlignment(this.cmdExit, Alignment.MIDDLE_CENTER);
+		this.cmdAccelerometer.setWidth(100, Unit.PERCENTAGE);
+		this.cmdAccelerometer.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdAccelerometer);
+		this.verticalLayout.setComponentAlignment(this.cmdAccelerometer, Alignment.MIDDLE_CENTER);
+		this.cmdApp.setWidth(100, Unit.PERCENTAGE);
+		this.cmdApp.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdApp);
+		this.verticalLayout.setComponentAlignment(this.cmdApp, Alignment.MIDDLE_CENTER);
+		this.cmdBarcodescanner.setWidth(100, Unit.PERCENTAGE);
+		this.cmdBarcodescanner.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdBarcodescanner);
+		this.verticalLayout.setComponentAlignment(this.cmdBarcodescanner, Alignment.MIDDLE_CENTER);
+		this.cmdCamera.setWidth(100, Unit.PERCENTAGE);
+		this.cmdCamera.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdCamera);
+		this.verticalLayout.setComponentAlignment(this.cmdCamera, Alignment.MIDDLE_CENTER);
+		this.cmdCompass.setWidth(100, Unit.PERCENTAGE);
+		this.cmdCompass.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdCompass);
+		this.verticalLayout.setComponentAlignment(this.cmdCompass, Alignment.MIDDLE_CENTER);
+		this.cmdContacts.setWidth(100, Unit.PERCENTAGE);
+		this.cmdContacts.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdContacts);
+		this.verticalLayout.setComponentAlignment(this.cmdContacts, Alignment.MIDDLE_CENTER);
+		this.cmdDeviceInfo.setWidth(100, Unit.PERCENTAGE);
+		this.cmdDeviceInfo.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdDeviceInfo);
+		this.verticalLayout.setComponentAlignment(this.cmdDeviceInfo, Alignment.MIDDLE_CENTER);
+		this.cmdGeolocation.setWidth(100, Unit.PERCENTAGE);
+		this.cmdGeolocation.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdGeolocation);
+		this.verticalLayout.setComponentAlignment(this.cmdGeolocation, Alignment.MIDDLE_CENTER);
+		this.cmdNFC.setWidth(100, Unit.PERCENTAGE);
+		this.cmdNFC.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdNFC);
+		this.verticalLayout.setComponentAlignment(this.cmdNFC, Alignment.MIDDLE_CENTER);
+		this.cmdSMS.setWidth(100, Unit.PERCENTAGE);
+		this.cmdSMS.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdSMS);
+		this.verticalLayout.setComponentAlignment(this.cmdSMS, Alignment.MIDDLE_CENTER);
+		this.cmdVibration.setWidth(100, Unit.PERCENTAGE);
+		this.cmdVibration.setHeight(-1, Unit.PIXELS);
+		this.verticalLayout.addComponent(this.cmdVibration);
+		this.verticalLayout.setComponentAlignment(this.cmdVibration, Alignment.MIDDLE_CENTER);
+		this.verticalLayout.setWidth(100, Unit.PERCENTAGE);
+		this.verticalLayout.setHeight(-1, Unit.PIXELS);
+		this.panel.setContent(this.verticalLayout);
+		this.gridLayout.setColumns(1);
+		this.gridLayout.setRows(2);
+		this.horizontalLayout.setWidth(100, Unit.PERCENTAGE);
+		this.horizontalLayout.setHeight(-1, Unit.PIXELS);
+		this.gridLayout.addComponent(this.horizontalLayout, 0, 0);
+		this.panel.setSizeFull();
+		this.gridLayout.addComponent(this.panel, 0, 1);
+		this.gridLayout.setColumnExpandRatio(0, 10.0F);
+		this.gridLayout.setRowExpandRatio(1, 10.0F);
+		this.gridLayout.setSizeFull();
+		this.setContent(this.gridLayout);
+		this.setSizeFull();
+
+		this.cmdExit.addClickListener(event -> this.cmdExit_buttonClick(event));
+		this.cmdAccelerometer.addClickListener(event -> this.cmdAccelerometer_buttonClick(event));
+		this.cmdApp.addClickListener(event -> this.cmdApp_buttonClick(event));
+		this.cmdBarcodescanner.addClickListener(event -> this.cmdBarcodescanner_buttonClick(event));
+		this.cmdCamera.addClickListener(event -> this.cmdCamera_buttonClick(event));
+		this.cmdCompass.addClickListener(event -> this.cmdCompass_buttonClick(event));
+		this.cmdContacts.addClickListener(event -> this.cmdContacts_buttonClick(event));
+		this.cmdDeviceInfo.addClickListener(event -> this.cmdDeviceInfo_buttonClick(event));
+		this.cmdGeolocation.addClickListener(event -> this.cmdGeolocation_buttonClick(event));
+		this.cmdNFC.addClickListener(event -> this.cmdNFC_buttonClick(event));
+		this.cmdSMS.addClickListener(event -> this.cmdSMS_buttonClick(event));
+		this.cmdVibration.addClickListener(event -> this.cmdVibration_buttonClick(event));
+	} // </generated-code>
+
+	// <generated-code name="variables">
+	private XdevLabel label;
+	private XdevButton cmdExit, cmdAccelerometer, cmdApp, cmdBarcodescanner, cmdCamera, cmdCompass, cmdContacts,
+			cmdDeviceInfo, cmdGeolocation, cmdNFC, cmdSMS, cmdVibration;
+	private XdevHorizontalLayout horizontalLayout;
+	private XdevPanel panel;
+	private XdevGridLayout gridLayout;
+	private XdevVerticalLayout verticalLayout;
+	// </generated-code>
+
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mobile-app xmlns="http://rapidclipse.com/mobile/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://rapidclipse.com/mobile/1.0.0 http://rapidclipse.com/xsd/mobile-1.0.0.xsd">
+	<services>
+		<service class="com.xdev.mobile.service.app.AppService"></service>
+		<service
+			class="com.xdev.mobile.service.accelerometer.AccelerometerService">
+		</service>
+		<service
+			class="com.xdev.mobile.service.barcodescanner.BarcodescannerService">
+		</service>
+		<service class="com.xdev.mobile.service.camera.CameraService"></service>
+		<service
+			class="com.xdev.mobile.service.compass.CompassService">
+		</service>
+		<service
+			class="com.xdev.mobile.service.contacts.ContactsService">
+		</service>
+		<service
+			class="com.xdev.mobile.service.deviceinfo.DeviceInfoService">
+		</service>
+		<service class="com.xdev.mobile.service.file.FileService"></service>
+		<service
+			class="com.xdev.mobile.service.geolocation.GeolocationService">
+		</service>
+		<service class="com.xdev.mobile.service.nfc.NfcService"></service>
+		<service class="com.xdev.mobile.service.sms.SmsService"></service>
+		<service
+			class="com.xdev.mobile.service.vibrate.VibrateService">
+		</service>
+	</services>
+	<theme>rapidclipse_demo_mobilekit</theme>
+
+	<name>MobileKit Demo</name>
+
+
+
+	<icon>WebContent/WEB-INF/resources/app/icon.png</icon>
+
+
+	<widgetset>
+		com.xdev.rcdemo.mobilekit.ui.widgetset.rapidclipse_demo_mobilekitWidgetset
+	</widgetset>
+	<content-security-policy>
+
+
+		<directive name="img-src">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<value>http://*.openstreetmap.org</value>
+		</directive>
+	</content-security-policy>
+	<debuggable>true</debuggable>
+
+
+</mobile-app>
